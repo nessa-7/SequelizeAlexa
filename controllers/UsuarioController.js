@@ -77,7 +77,7 @@ const UsuarioController = {
   async getUsuarios(req, res) {
     try {
       const usuarios = await Usuario.findAll();
-      res.status(200).json(usuarios);
+      return res.json(usuarios);
     } catch (error) {
       res.status(500).json({ error: 'Error al obtener usuarios' });
     }

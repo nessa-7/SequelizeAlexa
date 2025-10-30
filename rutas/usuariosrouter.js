@@ -6,5 +6,4 @@ const route=Router()
 route.get('/prueba',UsuarioController.prueba)
 route.get('/usuario',UsuarioController.getUsuarios)
 
-
 module.exports=route
